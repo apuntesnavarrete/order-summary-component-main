@@ -4,7 +4,7 @@
   --Desaturated-blue: hsl(224, 23%, 55%);
   --Bright-blue: hsl(245, 75%, 52%);
   --Dark-blue: hsl(223, 47%, 23%);
-  --color_hover: hsl(245, 79%, 64%)
+  --color_hover: hsl(245, 79%, 64%);
 }
 * {
   padding: 0;
