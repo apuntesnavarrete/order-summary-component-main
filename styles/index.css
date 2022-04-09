@@ -1,7 +1,16 @@
+:root {
+    -Very-pale-blue: hsl(225, 100%, 98%);
+    -Pale-blue: hsl(225, 100%, 94%);
+    -Desaturated-blue: hsl(224, 23%, 55%);
+    -Bright-blue: hsl(245, 75%, 52%);
+    -Dark-blue: hsl(223, 47%, 23%);
+    }
+
 body{
     background-image: url("../images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
     background-size: 100% 300px;
     background-color: hsl(225deg 100% 94%);
-
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
 }
