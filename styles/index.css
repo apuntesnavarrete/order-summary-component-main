@@ -12,7 +12,6 @@
 }
 
 body{
-    width: 100vw;
     height: 100vh;
     background-image: url("../images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
@@ -27,15 +26,16 @@ body{
 .card_container{
     background-color: var(--Very-pale-blue);
     width: 325px;
-    height: 475px;
+    height: 500px;
     border-radius: 20px;
+    box-shadow: 9px 9px 17px -11px rgba(0,0,0,0.76);
 }
 .card_img{
     width: 100%;
     border-radius: 20px 20px 0px 0px;
 }
 .card_titulo{
-    margin: 15px 0;
+    margin:20px 0px 10px 0px;
     font-size: 1.3rem;
     text-align: center;
     color: var(--Dark-blue);
@@ -47,6 +47,7 @@ body{
     text-align: center;
     color: var(--Desaturated-blue);
     font-size: 0.9rem;
+    line-height: 1.5;
 }
 .card_plan{
     background-color: hsl(230deg 40% 95%);
@@ -65,6 +66,9 @@ body{
     color:var(--Bright-blue);
     margin-left: 30px;
     font-size: 0.7rem;
+}
+.card_plan a:hover{
+    color:hsl(245, 79%, 64%);
     text-decoration: none;
 }
 .card_plan_anual{
@@ -79,21 +83,41 @@ body{
 }
 
 .button{
+    cursor: pointer;
     width: 100%;
-    height: 35px;
+    height: 40px;
     margin-bottom: 5px;
     border-radius: 5px;
-    border: 1px solid var(--Very-pale-blue);
 }
 .primary{
     color: var(--Very-pale-blue);
     background-color: var(--Bright-blue);
     font-weight: 700;
     font-size: 0.7rem;
+    box-shadow: 1px 3px 28px 5px var(--Desaturated-blue);
+    border: 1px solid var(--Bright-blue);
+
+}
+.primary:hover{
+    background-color:hsl(245, 79%, 64%);
+    border: 1px solid hsl(245, 79%, 64%);
+
+
 }
 .secundary{
     font-weight: 900;
     font-size: 0.7rem;
     color: var(--Desaturated-blue);
+    border: 1px solid var(--Very-pale-blue);
 
 }
+.secundary:hover{
+    color: var(--Dark-blue);
+}
+
+@media (orientation: landscape) and (max-width: 765px) {
+    body{
+        height: 550px;
+        overflow: scroll;
+    }
+  }
